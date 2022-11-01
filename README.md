@@ -65,9 +65,6 @@ This app is a recipe app where people can log in and take advantage of the recip
    * [list associated required story here]
    * ...
 
-# Taste-Recipe-app
-
-
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
