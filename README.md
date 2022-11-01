@@ -19,8 +19,11 @@ This app is a recipe app where people can log in and take advantage of the recip
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:** Recepie
-- **Mobile:** IOS (APPLE)
+
+- **Category:** Health and Fitness/ recreational.
+
+- **Mobile:** What makes this Idea unique is that it has the potential to connect people from all around the world by sharing their recipes and experiments. with the camera feature the user can share images of the final product and tell the community about their experiences.
+
 - **Story:** Cooking is a passionate profession that transforms everyday meals into something appealing and inviting, and many people practice this art as a hobby or make it a profession. Especially in the first Covid19 phase, when the whole world was confined to their homes, food was the only thing they really connected with, so there were a lot of food photos people shared in the first two months. skill.
 
     It was just around this time that people explored so many food recipe mobile apps and realized their usefulness. Even today, people, especially foodies, love using these apps to search for recipes for different dishes.
