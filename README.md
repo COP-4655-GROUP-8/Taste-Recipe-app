@@ -65,15 +65,10 @@ This app is a recipe app where people can log in and take advantage of the recip
 * Home Screen Navigation
    * create home screen with recipes
    * add tab navigation to switch between views
-* Categories tab
-   * Add categories to recipes to filter between
 * New recipe tab
    * add recipes to db
 * favorites tab
    * add ability to favorite recipes
-* Settings tab
-   * TBD if necessary
-   * would likely have the logout option and other possible options(delete account)
 
 ### 3. Navigation
 
