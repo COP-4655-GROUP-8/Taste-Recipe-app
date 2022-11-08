@@ -6,7 +6,8 @@ Original App Design Project - README Template
 ## Table of Contents
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
-
+1. [Wireframes](#Wireframes)
+2. [Schema](#Schema)
 
 ## Overview
 ### Description
@@ -60,15 +61,12 @@ This app is a recipe app where people can log in and take advantage of the recip
 
 ### 2. Screen Archetypes
 
-* Login Screen
-   * login controller creation
-* Home Screen Navigation
-   * create home screen with recipes
-   * add tab navigation to switch between views
-* New recipe tab
-   * add recipes to db
-* favorites tab
-   * add ability to favorite recipes
+* [list first screen here]
+   * [list associated required story here]
+   * ...
+* [list second screen here]
+   * [list associated required story here]
+   * ...
 
 ### 3. Navigation
 
@@ -93,5 +91,4 @@ This app is a recipe app where people can log in and take advantage of the recip
     * This is a screen where users can look at different recipes that are posted on the app, and have the ability to add their favorite recipes they like to revisit when they want to on the Favorites screen.
 
 ## Wireframes
-<img src="https://i.imgur.com/olUIvbU.jpg)
-" width=800><br>
+<img src="https://i.imgur.com/olUIvbU.jpg)" width=800><br>
