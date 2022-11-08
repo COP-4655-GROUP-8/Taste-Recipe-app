@@ -89,3 +89,7 @@ This app is a recipe app where people can log in and take advantage of the recip
 * [Recipees screen]
     * [From Recipes screen to either Home Screen or Favorites Screen]
     * This is a screen where users can look at different recipes that are posted on the app, and have the ability to add their favorite recipes they like to revisit when they want to on the Favorites screen.
+
+## Wireframes
+<img src="https://i.imgur.com/olUIvbU.jpg)
+" width=800><br>
