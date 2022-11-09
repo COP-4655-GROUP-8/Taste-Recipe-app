@@ -61,12 +61,23 @@ This app is a recipe app where people can log in and take advantage of the recip
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Login Screen
+   * login controller creation
+* Home Screen Navigation
+   * create home screen with recipes
+   * add tab navigation to switch between views
+* Categories tab
+   * View categories of recipes to filter between
+* My recipes tab
+   * add recipes to db
+   * view your recipes
+   * delete your recipes
+* liked tab
+   * add ability to view liked recipes
+* Settings tab
+   * TBD if necessary
+   * would likely have the logout option and other possible options(delete account)
+
 
 ### 3. Navigation
 
@@ -92,3 +103,53 @@ This app is a recipe app where people can log in and take advantage of the recip
 
 ## Wireframes
 <img src="https://i.imgur.com/olUIvbU.jpg)" width=800><br>
+
+### Networking
+* Login Screen
+   * Built-in PFUser login functionality.
+* Home Screen
+   * (Read/GET) All Recipes
+   * (Read/GET) Each Recipes' likes through relation
+   ``` Swift
+   let recipeQuery = PFQuery(className:"recipes")
+   let recipes = recipeQuery.find()
+   recipes.order(byDescending: "createdAt")
+   ```
+* Categories tab
+   * (Read/GET) Recipes for the selected category.
+   ``` Swift
+   let recipeQuery = PFQuery(className:"recipes")
+   recipes = recipeQuery.whereKey("category", equalTo: category)
+   recipes.order(byDescending: "createdAt")
+   ```
+* My recipes tab
+   * (Create/POST) Create a new recipe.
+   ``` Swift
+   let newRecipe = PFObject(className: "recipes")
+   //fill in newRecipe info
+   newRecipe.saveInBackground { success, error in
+      if success {
+         print("Saved!")
+      } else {
+         print("Error!")
+      }
+   }
+   ```
+   * (Delete) Delete a recipe.
+   ``` Swift
+   let recipe = self.whateverIsHoldRecipe
+   recipe.delete()
+   ```
+   * (Read/GET) View your recipes.
+   ``` Swift
+   let recipeQuery = PFQuery(className:"recipes")
+   recipes = likesQuery.whereKey("author", equalTo: currentUser)
+   recipes.order(byDescending: "createdAt")
+   ```
+* liked tab 
+   * (read/GET) Recipes that the author liked.
+   ``` Swift
+   let recipeQuery = PFQuery(className:"recipes")
+   recipes = likesQuery.whereKey("likes.user", equalTo: currentUser)
+   recipes.order(byDescending: "createdAt")
+   ```
