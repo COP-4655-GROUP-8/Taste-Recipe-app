@@ -104,7 +104,7 @@ This app is a recipe app where people can log in and take advantage of the recip
 ## Wireframes
 <img src="https://i.imgur.com/olUIvbU.jpg)" width=800><br>
 
-###Models 
+### Models 
 * Post
 
 property: Type: Description
