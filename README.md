@@ -104,6 +104,38 @@ This app is a recipe app where people can log in and take advantage of the recip
 ## Wireframes
 <img src="https://i.imgur.com/olUIvbU.jpg)" width=800><br>
 
+###Models 
+* Post
+
+property: Type: Description
+objectId: String: This property represents the identities of every single user
+which uses the app to look at different recipes and get some inspiration, as well as post their own for others to see.
+
+author: Pointer to User: This property represents the user when they upload a photo
+or description of a recipe they want to share. This property can also be linked to all
+comments and captions they post as well.
+
+photo: File: This property represents the visual representation of the
+recipe the user wants to share with others.
+
+caption: String: This property is part of an optional description the user
+can add if they want with the photo of the recipe, they post for others to see.
+
+commentsCount: Number: This property will show the
+total number of comments that were made on a recipe that was
+posted in the app.
+
+likeCount: Number: This property will show the like
+count of each post/recipe, representing how many users
+like the recipe posted.
+
+created: DateTime: This property shows the date of
+when the recipe was posted by the user.
+
+updated: DateTime: This property shows the date of
+when the recipe was last edited.
+
+
 ### Networking
 * Login Screen
    * Built-in PFUser login functionality.
