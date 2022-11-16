@@ -1,0 +1,6 @@
+framework module Pods_Taste {
+  umbrella header "Pods-Taste-umbrella.h"
+
+  export *
+  module * { export * }
+}
