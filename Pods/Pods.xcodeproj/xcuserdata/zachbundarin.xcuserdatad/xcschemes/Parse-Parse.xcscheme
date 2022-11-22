@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1300"
+   LastUpgradeVersion = "1340"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B3460FC5FF930EB95F196A32E8F6CA0F"
-               BuildableName = "Pods_Taste.framework"
-               BlueprintName = "Pods-Taste"
+               BlueprintIdentifier = "EAFFB8E885E2EDFD55062DE694143593"
+               BuildableName = "Parse.bundle"
+               BlueprintName = "Parse-Parse"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
