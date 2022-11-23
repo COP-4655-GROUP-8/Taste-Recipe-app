@@ -443,17 +443,13 @@
     </scenes>
     <resources>
         <image name="178D8BB3-DE03-47E8-A35E-5E6E315CB980" width="200" height="162"/>
-<<<<<<< HEAD
-        <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="line.3.horizontal.decrease" catalog="system" width="128" height="73"/>
-=======
         <image name="birthday.cake" catalog="system" width="128" height="115"/>
         <image name="cup.and.saucer" catalog="system" width="128" height="91"/>
         <image name="frying.pan" catalog="system" width="128" height="81"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="list.bullet" catalog="system" width="128" height="87"/>
->>>>>>> 07afe8933ebe6df7b2454f2cb4f4f351ecdf637a
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="popcorn" catalog="system" width="102" height="128"/>
         <image name="suit.heart.fill" catalog="system" width="128" height="107"/>
