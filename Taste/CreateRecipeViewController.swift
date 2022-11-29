@@ -38,6 +38,7 @@ class CreateRecipeViewController: UIViewController, UIImagePickerControllerDeleg
         recipe.saveInBackground { success, error in
             if success {
                 print("Saved!")
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
                 self.dismiss(animated: true)
             } else {
                 print("Error!")
