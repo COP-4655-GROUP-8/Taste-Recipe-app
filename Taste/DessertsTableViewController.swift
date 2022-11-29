@@ -10,7 +10,7 @@ import Parse
 import Alamofire
 import AlamofireImage
 
-class DessertsTableViewController: UITableViewController {
+class DessertsTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var dessertstableView: UITableView!
     
@@ -19,8 +19,8 @@ class DessertsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
+        dessertstableView.delegate = self
+        dessertstableView.dataSource = self
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -32,31 +32,33 @@ class DessertsTableViewController: UITableViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        var recipeQuery = PFQuery(className:"recipes")
-        recipeQuery = recipeQuery.whereKey("author", equalTo: "Desserts")
+        var recipeQuery = PFQuery(className:"Recipes")
+        recipeQuery = recipeQuery.whereKey("category", equalTo: "Dessert")
         recipeQuery.order(byDescending: "createdAt")
         
         recipeQuery.findObjectsInBackground { (posts, error) in
             if posts != nil {
                 self.posts = posts!
-                self.tableView.reloadData()
+                self.dessertstableView.reloadData()
+                print(self.posts)
             }
         }
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let post = posts[indexPath.section]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "DessertsPostCell") as! DessertsPostCell
         
-        let user = post["author"] as! PFUser
         cell.authorLabel.text = post["author"] as? String
         cell.titleLabel.text = post["title"] as? String
         cell.categoryLabel.text = post["catgory"] as? String
@@ -66,7 +68,7 @@ class DessertsTableViewController: UITableViewController {
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
         
-        cell.photoView.af.setImage(withURL: url)
+        cell.photoView.af_setImage(withURL: url)
         
         return cell
         
