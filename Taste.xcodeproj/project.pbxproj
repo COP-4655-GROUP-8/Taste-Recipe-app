@@ -10,6 +10,14 @@
 		706132B0754BBEAF7A51C437 /* Pods_Taste.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702D9BF5F017C02A6F005D4E /* Pods_Taste.framework */; };
 		750634DD292C33F10049E9E0 /* MyRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750634DC292C33F10049E9E0 /* MyRecipesViewController.swift */; };
 		75BBB564292D9EBE002D4CBA /* CreateRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBB563292D9EBE002D4CBA /* CreateRecipeViewController.swift */; };
+		91A4435629345E0600D00369 /* DrinksPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4435529345E0600D00369 /* DrinksPostCell.swift */; };
+		91A4435829354FCB00D00369 /* DrinksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4435729354FCB00D00369 /* DrinksTableViewController.swift */; };
+		91A4435C29355F9700D00369 /* AppetizersPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4435B29355F9700D00369 /* AppetizersPostCell.swift */; };
+		91A4435E2935617F00D00369 /* AppetizersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4435D2935617F00D00369 /* AppetizersTableViewController.swift */; };
+		91A443602935682600D00369 /* EntreesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4435F2935682600D00369 /* EntreesTableViewController.swift */; };
+		91A443622935685200D00369 /* EntreesPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A443612935685200D00369 /* EntreesPostCell.swift */; };
+		91A4436629356CF300D00369 /* DessertsPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4436529356CF300D00369 /* DessertsPostCell.swift */; };
+		91A4436829356D1000D00369 /* DessertsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4436729356D1000D00369 /* DessertsTableViewController.swift */; };
 		DD7AB3AE291F5C36000643E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AB3AD291F5C36000643E1 /* AppDelegate.swift */; };
 		DD7AB3B0291F5C36000643E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AB3AF291F5C36000643E1 /* SceneDelegate.swift */; };
 		DD7AB3B5291F5C36000643E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7AB3B3291F5C36000643E1 /* Main.storyboard */; };
@@ -25,6 +33,14 @@
 		750634DC292C33F10049E9E0 /* MyRecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecipesViewController.swift; sourceTree = "<group>"; };
 		75BBB563292D9EBE002D4CBA /* CreateRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecipeViewController.swift; sourceTree = "<group>"; };
 		76EAD4EC3BA182354E1DD45B /* Pods-Taste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taste.debug.xcconfig"; path = "Target Support Files/Pods-Taste/Pods-Taste.debug.xcconfig"; sourceTree = "<group>"; };
+		91A4435529345E0600D00369 /* DrinksPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksPostCell.swift; sourceTree = "<group>"; };
+		91A4435729354FCB00D00369 /* DrinksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksTableViewController.swift; sourceTree = "<group>"; };
+		91A4435B29355F9700D00369 /* AppetizersPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersPostCell.swift; sourceTree = "<group>"; };
+		91A4435D2935617F00D00369 /* AppetizersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersTableViewController.swift; sourceTree = "<group>"; };
+		91A4435F2935682600D00369 /* EntreesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntreesTableViewController.swift; sourceTree = "<group>"; };
+		91A443612935685200D00369 /* EntreesPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntreesPostCell.swift; sourceTree = "<group>"; };
+		91A4436529356CF300D00369 /* DessertsPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsPostCell.swift; sourceTree = "<group>"; };
+		91A4436729356D1000D00369 /* DessertsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsTableViewController.swift; sourceTree = "<group>"; };
 		DD7AB3AA291F5C36000643E1 /* Taste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7AB3AD291F5C36000643E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD7AB3AF291F5C36000643E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +105,8 @@
 				DD7AB3AD291F5C36000643E1 /* AppDelegate.swift */,
 				DD7AB3AF291F5C36000643E1 /* SceneDelegate.swift */,
 				DD7AB3B3291F5C36000643E1 /* Main.storyboard */,
+				91A4436529356CF300D00369 /* DessertsPostCell.swift */,
+				91A4436729356D1000D00369 /* DessertsTableViewController.swift */,
 				75BBB563292D9EBE002D4CBA /* CreateRecipeViewController.swift */,
 				DD7AB3C1291F623E000643E1 /* LoginViewController.swift */,
 				DD7B9192291F632C0030FFFB /* FeedViewController.swift */,
@@ -96,6 +114,12 @@
 				DD7AB3B8291F5C37000643E1 /* LaunchScreen.storyboard */,
 				DD7AB3BB291F5C37000643E1 /* Info.plist */,
 				750634DC292C33F10049E9E0 /* MyRecipesViewController.swift */,
+				91A4435529345E0600D00369 /* DrinksPostCell.swift */,
+				91A4435729354FCB00D00369 /* DrinksTableViewController.swift */,
+				91A4435B29355F9700D00369 /* AppetizersPostCell.swift */,
+				91A4435D2935617F00D00369 /* AppetizersTableViewController.swift */,
+				91A4435F2935682600D00369 /* EntreesTableViewController.swift */,
+				91A443612935685200D00369 /* EntreesPostCell.swift */,
 			);
 			path = Taste;
 			sourceTree = "<group>";
@@ -215,11 +239,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A4435C29355F9700D00369 /* AppetizersPostCell.swift in Sources */,
 				DD7AB3C2291F623E000643E1 /* LoginViewController.swift in Sources */,
+				91A4435E2935617F00D00369 /* AppetizersTableViewController.swift in Sources */,
+				91A4435629345E0600D00369 /* DrinksPostCell.swift in Sources */,
+				91A4436829356D1000D00369 /* DessertsTableViewController.swift in Sources */,
+				91A443622935685200D00369 /* EntreesPostCell.swift in Sources */,
 				DD7AB3AE291F5C36000643E1 /* AppDelegate.swift in Sources */,
 				75BBB564292D9EBE002D4CBA /* CreateRecipeViewController.swift in Sources */,
+				91A4435829354FCB00D00369 /* DrinksTableViewController.swift in Sources */,
+				91A4436629356CF300D00369 /* DessertsPostCell.swift in Sources */,
 				750634DD292C33F10049E9E0 /* MyRecipesViewController.swift in Sources */,
 				DD7B9193291F632C0030FFFB /* FeedViewController.swift in Sources */,
+				91A443602935682600D00369 /* EntreesTableViewController.swift in Sources */,
 				DD7AB3B0291F5C36000643E1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
