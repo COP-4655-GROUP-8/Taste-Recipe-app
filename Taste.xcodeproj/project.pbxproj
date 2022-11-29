@@ -10,6 +10,8 @@
 		706132B0754BBEAF7A51C437 /* Pods_Taste.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702D9BF5F017C02A6F005D4E /* Pods_Taste.framework */; };
 		750634DD292C33F10049E9E0 /* MyRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750634DC292C33F10049E9E0 /* MyRecipesViewController.swift */; };
 		75BBB564292D9EBE002D4CBA /* CreateRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBB563292D9EBE002D4CBA /* CreateRecipeViewController.swift */; };
+		C82BC7FB292FE084006C1592 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BC7FA292FE084006C1592 /* HomeViewController.swift */; };
+		C82BC7FD292FE2A5006C1592 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BC7FC292FE2A5006C1592 /* HomeCell.swift */; };
 		DD7AB3AE291F5C36000643E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AB3AD291F5C36000643E1 /* AppDelegate.swift */; };
 		DD7AB3B0291F5C36000643E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AB3AF291F5C36000643E1 /* SceneDelegate.swift */; };
 		DD7AB3B5291F5C36000643E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7AB3B3291F5C36000643E1 /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 		750634DC292C33F10049E9E0 /* MyRecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecipesViewController.swift; sourceTree = "<group>"; };
 		75BBB563292D9EBE002D4CBA /* CreateRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecipeViewController.swift; sourceTree = "<group>"; };
 		76EAD4EC3BA182354E1DD45B /* Pods-Taste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taste.debug.xcconfig"; path = "Target Support Files/Pods-Taste/Pods-Taste.debug.xcconfig"; sourceTree = "<group>"; };
+		C82BC7FA292FE084006C1592 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C82BC7FC292FE2A5006C1592 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		DD7AB3AA291F5C36000643E1 /* Taste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7AB3AD291F5C36000643E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD7AB3AF291F5C36000643E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 				75BBB563292D9EBE002D4CBA /* CreateRecipeViewController.swift */,
 				DD7AB3C1291F623E000643E1 /* LoginViewController.swift */,
 				DD7B9192291F632C0030FFFB /* FeedViewController.swift */,
+				C82BC7FA292FE084006C1592 /* HomeViewController.swift */,
+				C82BC7FC292FE2A5006C1592 /* HomeCell.swift */,
 				DD7AB3B6291F5C37000643E1 /* Assets.xcassets */,
 				DD7AB3B8291F5C37000643E1 /* LaunchScreen.storyboard */,
 				DD7AB3BB291F5C37000643E1 /* Info.plist */,
@@ -215,8 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C82BC7FD292FE2A5006C1592 /* HomeCell.swift in Sources */,
 				DD7AB3C2291F623E000643E1 /* LoginViewController.swift in Sources */,
 				DD7AB3AE291F5C36000643E1 /* AppDelegate.swift in Sources */,
+				C82BC7FB292FE084006C1592 /* HomeViewController.swift in Sources */,
 				75BBB564292D9EBE002D4CBA /* CreateRecipeViewController.swift in Sources */,
 				750634DD292C33F10049E9E0 /* MyRecipesViewController.swift in Sources */,
 				DD7B9193291F632C0030FFFB /* FeedViewController.swift in Sources */,
@@ -296,7 +304,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -350,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -375,6 +383,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,6 +412,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
