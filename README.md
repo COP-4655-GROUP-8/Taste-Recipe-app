@@ -73,7 +73,7 @@ This app is a recipe app where people can log in and take advantage of the recip
 
 ### GIF for the completed user stories
 <img src="https://media.giphy.com/media/PzqYXik7V3tA60WjB6/giphy.gif"><br>
-<img src="https://media.giphy.com/media/Pl0hnRmETHRYhuJNwq/giphy.gif"><br> 
+<img src="https://media.giphy.com/media/Pl0hnRmETHRYhuJNwq/giphy.gif"><br>
 <img src="https://media.giphy.com/media/DNE9t4hdbO7Zfugo8u/giphy.gif"><br>
 ### Login Screen 
 <img src="https://i.imgur.com/uIk68hI.jpg)"><br>   
