@@ -60,17 +60,20 @@ This app is a recipe app where people can log in and take advantage of the recip
     
 ### Completed User Stories 
     
-- [x] Created the Login page where the user can login or create an account         by signing up providing the email and password.  
+- [x] Created the Login page where the user can login or create an account by signing up providing the email and password.  
 - [x]     created the home feed page.
 - [x]     created the add new recipe page.
 - [x]     created the liked/saved recipe page.
-- [x]     created the categories page where the user can select from   different categories.
-- [x]   implimneted the LogIn Logout function.
+- [x]     created the categories page where the user can select from different categories.
+- [x]     implimneted the LogIn Logout function.
 - [x]     added the add recipe button and its Funtionality
-- [x]     added the pages for the categories viwe (Dessert, Entres, Appetizers and Drinks),
+- [x]     added the pages for the categories viwe (Dessert, Entres, Appetizers and Drinks).
+- [x]     added the delete functionality on my recipes page.
+- [x]     made the categories views functional. the user can see the pictures and title for the recipes with the steps to make it.
 
 ### GIF for the completed user stories
-<img src="https://media.giphy.com/media/Pl0hnRmETHRYhuJNwq/giphy.gif"><br>
+<img src="https://media.giphy.com/media/PzqYXik7V3tA60WjB6/giphy.gif"><br>
+<img src="https://media.giphy.com/media/Pl0hnRmETHRYhuJNwq/giphy.gif"><br> 
 <img src="https://media.giphy.com/media/DNE9t4hdbO7Zfugo8u/giphy.gif"><br>
 ### Login Screen 
 <img src="https://i.imgur.com/uIk68hI.jpg)"><br>   
