@@ -11,6 +11,7 @@
 		750634DD292C33F10049E9E0 /* MyRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750634DC292C33F10049E9E0 /* MyRecipesViewController.swift */; };
 		7587BD6B2935DB3900B68576 /* MyRecipesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7587BD6A2935DB3900B68576 /* MyRecipesCell.swift */; };
 		75BBB564292D9EBE002D4CBA /* CreateRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBB563292D9EBE002D4CBA /* CreateRecipeViewController.swift */; };
+<<<<<<< HEAD
 		91A4435629345E0600D00369 /* DrinksPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4435529345E0600D00369 /* DrinksPostCell.swift */; };
 		91A4435829354FCB00D00369 /* DrinksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4435729354FCB00D00369 /* DrinksTableViewController.swift */; };
 		91A4435C29355F9700D00369 /* AppetizersPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4435B29355F9700D00369 /* AppetizersPostCell.swift */; };
@@ -19,6 +20,8 @@
 		91A443622935685200D00369 /* EntreesPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A443612935685200D00369 /* EntreesPostCell.swift */; };
 		91A4436629356CF300D00369 /* DessertsPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4436529356CF300D00369 /* DessertsPostCell.swift */; };
 		91A4436829356D1000D00369 /* DessertsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4436729356D1000D00369 /* DessertsTableViewController.swift */; };
+=======
+>>>>>>> 6c745dd45454a3d3ce1a49b08c64a683af406c55
 		C82BC7FB292FE084006C1592 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BC7FA292FE084006C1592 /* HomeViewController.swift */; };
 		C82BC7FD292FE2A5006C1592 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BC7FC292FE2A5006C1592 /* HomeCell.swift */; };
 		DD7AB3AE291F5C36000643E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AB3AD291F5C36000643E1 /* AppDelegate.swift */; };
