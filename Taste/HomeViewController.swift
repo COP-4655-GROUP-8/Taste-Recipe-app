@@ -82,7 +82,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let post = posts[indexPath.section]
+        let post = posts[indexPath.row]
         //let recipe = (post["recipe"] as? [PFObject]) ?? []
             
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell") as! HomeCell
@@ -99,7 +99,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let url = URL(string: urlString)!
             
         cell.PhotoView.af_setImage(withURL: url)
-        print(post)
         return cell
         
     }
