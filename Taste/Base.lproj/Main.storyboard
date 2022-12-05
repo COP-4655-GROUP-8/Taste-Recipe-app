@@ -807,16 +807,11 @@
     </scenes>
     <resources>
         <image name="178D8BB3-DE03-47E8-A35E-5E6E315CB980" width="200" height="162"/>
-        <image name="birthday.cake" catalog="system" width="128" height="115"/>
-        <image name="cup.and.saucer" catalog="system" width="128" height="91"/>
-        <image name="frying.pan" catalog="system" width="128" height="81"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <image name="popcorn" catalog="system" width="102" height="128"/>
         <image name="suit.heart.fill" catalog="system" width="128" height="109"/>
-        <image name="trash" catalog="system" width="121" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
