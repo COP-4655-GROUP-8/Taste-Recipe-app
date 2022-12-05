@@ -253,24 +253,6 @@
             </objects>
             <point key="canvasLocation" x="-132" y="1708"/>
         </scene>
-        <!--favorites-->
-        <scene sceneID="tep-xz-iin">
-            <objects>
-                <viewController id="Evy-CA-OCD" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qZV-hS-Lyy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="AAR-hG-531"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="favorites" id="V7t-D1-gNO">
-                        <imageReference key="image" image="suit.heart.fill" catalog="system" renderingMode="original"/>
-                    </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pK0-Kd-4fg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2252.1739130434785" y="1707.5892857142856"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7KM-i6-gmN">
             <objects>
@@ -284,7 +266,6 @@
                     <connections>
                         <segue destination="wBx-38-8Xz" kind="relationship" relationship="viewControllers" id="lQU-74-X5b"/>
                         <segue destination="KNt-WK-er4" kind="relationship" relationship="viewControllers" id="dSe-L0-KpZ"/>
-                        <segue destination="Evy-CA-OCD" kind="relationship" relationship="viewControllers" id="Fwu-3D-69A"/>
                         <segue destination="RKv-Rk-zbs" kind="relationship" relationship="viewControllers" id="w93-O6-F1D"/>
                     </connections>
                 </tabBarController>
@@ -324,14 +305,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instructions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qal-g7-v8K">
-                                                    <rect key="frame" x="20" y="209" width="374" height="240"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIB-FZ-B9m">
-                                                    <rect key="frame" x="218" y="11" width="176" height="21"/>
+                                                    <rect key="frame" x="20" y="230" width="374" height="240"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -339,6 +313,13 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSL-h1-19T">
                                                     <rect key="frame" x="218" y="69" width="176" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIB-FZ-B9m">
+                                                    <rect key="frame" x="218" y="11" width="176" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -626,7 +607,7 @@
         <scene sceneID="FUL-cu-Z06">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gqQ-Eb-bKQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Drinks" image="cup.and.saucer" catalog="system" id="CKy-vS-tKh"/>
+                    <tabBarItem key="tabBarItem" title="Drinks" id="CKy-vS-tKh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="23r-gn-sl8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -645,7 +626,7 @@
         <scene sceneID="lrf-TR-7xl">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2A4-bd-MdR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Appetizers" image="popcorn" catalog="system" id="C66-5i-x4z"/>
+                    <tabBarItem key="tabBarItem" title="Appetizers" id="C66-5i-x4z"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bCX-2X-1Ao">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -660,11 +641,11 @@
             </objects>
             <point key="canvasLocation" x="2466.666666666667" y="-170.08928571428569"/>
         </scene>
-        <!--Entrés-->
+        <!--Entrees-->
         <scene sceneID="Tj2-Zn-1Cq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mgL-KY-Cw6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Entrés" image="frying.pan" catalog="system" id="7xI-jV-Jhb"/>
+                    <tabBarItem key="tabBarItem" title="Entrees" id="7xI-jV-Jhb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HGy-Pt-xO4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -683,7 +664,7 @@
         <scene sceneID="r1E-hr-vA6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ggF-hJ-r60" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Desserts" image="birthday.cake" catalog="system" id="yYE-N1-chj"/>
+                    <tabBarItem key="tabBarItem" title="Desserts" id="yYE-N1-chj"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KbI-sU-Odu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -728,15 +709,10 @@
     </scenes>
     <resources>
         <image name="178D8BB3-DE03-47E8-A35E-5E6E315CB980" width="200" height="162"/>
-        <image name="birthday.cake" catalog="system" width="128" height="115"/>
-        <image name="cup.and.saucer" catalog="system" width="128" height="91"/>
-        <image name="frying.pan" catalog="system" width="128" height="81"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <image name="popcorn" catalog="system" width="102" height="128"/>
-        <image name="suit.heart.fill" catalog="system" width="128" height="109"/>
         <image name="trash" catalog="system" width="121" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -747,26 +723,11 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>

@@ -34,13 +34,13 @@ class DessertsTableViewController: UIViewController, UITableViewDelegate, UITabl
         
         var recipeQuery = PFQuery(className:"Recipes")
         recipeQuery = recipeQuery.whereKey("category", equalTo: "Dessert")
+        recipeQuery.includeKeys(["author"])
         recipeQuery.order(byDescending: "createdAt")
         
         recipeQuery.findObjectsInBackground { (posts, error) in
             if posts != nil {
                 self.posts = posts!
                 self.dessertstableView.reloadData()
-                print(self.posts)
             }
         }
     }
@@ -55,13 +55,15 @@ class DessertsTableViewController: UIViewController, UITableViewDelegate, UITabl
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let post = posts[indexPath.section]
+        let post = posts[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "DessertsPostCell") as! DessertsPostCell
-        
-        cell.authorLabel.text = post["author"] as? String
+
+        let postAuthor = post["author"] as? PFUser
+            
+        cell.authorLabel.text = postAuthor?.username
         cell.titleLabel.text = post["title"] as? String
-        cell.categoryLabel.text = post["catgory"] as? String
+        cell.categoryLabel.text = post["category"] as? String
         cell.instructionLabel.text = post["instructions"] as? String
         
         let imageFile = post["image"] as! PFFileObject

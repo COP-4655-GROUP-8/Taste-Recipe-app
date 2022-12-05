@@ -33,6 +33,7 @@ class DrinksTableViewController: UIViewController, UITableViewDelegate, UITableV
         
         var recipeQuery = PFQuery(className:"Recipes")
         recipeQuery = recipeQuery.whereKey("category", equalTo: "Drink")
+        recipeQuery.includeKeys(["author"])
         recipeQuery.order(byDescending: "createdAt")
         
         recipeQuery.findObjectsInBackground { (posts, error) in
@@ -52,13 +53,15 @@ class DrinksTableViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let post = posts[indexPath.section]
-    
+        let post = posts[indexPath.row]
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "DrinksPostCell") as! DrinksPostCell
+    
+        let postAuthor = post["author"] as? PFUser
             
-        cell.authorLabel.text = post["author"] as? String
+        cell.authorLabel.text = postAuthor?.username
         cell.titleLabel.text = post["title"] as? String
-        cell.categoryLabel.text = post["catgory"] as? String
+        cell.categoryLabel.text = post["category"] as? String
         cell.instructionLabel.text = post["instructions"] as? String
             
         let imageFile = post["image"] as! PFFileObject
