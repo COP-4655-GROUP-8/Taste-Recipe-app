@@ -76,6 +76,11 @@ This app is a recipe app where people can log in and take advantage of the recip
 <img src="https://media.giphy.com/media/PzqYXik7V3tA60WjB6/giphy.gif"><br>
 <img src="https://media.giphy.com/media/Pl0hnRmETHRYhuJNwq/giphy.gif"><br>
 <img src="https://media.giphy.com/media/DNE9t4hdbO7Zfugo8u/giphy.gif"><br>
+
+
+### GIF For The Final Presentation
+<img src="https://media.giphy.com/media/wC7vsYYaDDMLUdQwoB/giphy.gif"><br>
+
 ### Login Screen 
 <img src="https://i.imgur.com/uIk68hI.jpg)"><br>   
 
@@ -115,7 +120,7 @@ This app is a recipe app where people can log in and take advantage of the recip
     * This is a screen where users can look at different recipes that are posted on the app.
 
 ## Wireframes
-<img src="https://i.imgur.com/olUIvbU.jpg)" width=800><br>
+<img src="https://i.imgur.com/L9WeNJu.jpg" width=800><br>
 
 ### Models 
 * Post
