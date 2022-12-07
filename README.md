@@ -68,6 +68,9 @@ This app is a recipe app where people can log in and take advantage of the recip
 - [x]     added the pages for the categories viwe (Dessert, Entres, Appetizers and Drinks).
 - [x]     added the delete functionality on my recipes page.
 - [x]     made the categories views functional. the user can see the pictures and title for the recipes with the steps to make it.
+- [x]     Polish remaining functionality.
+- [x]     Implement auto layout to all views.
+- [x]     Test and debug. Create a PR for any fixes necessary.
 
 ### GIF for the completed user stories
 <img src="https://media.giphy.com/media/PzqYXik7V3tA60WjB6/giphy.gif"><br>
