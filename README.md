@@ -47,7 +47,6 @@ This app is a recipe app where people can log in and take advantage of the recip
 | ---- | ------------------- | ------------------------------ | --------------------------------- | ------------------- |
 |#1   |     As a new Taste app user                |   I need to be able to create an account by providing email and password                             | So, I can be a part of the community who loves to cook and experiment new things in the kitchen                                  |   Ensuring the user is able to fill out the text fields with their email and password and then click submit to register.                  |
 |#2  |        As a Regular Taste app user             |   I want to be able to log in and log out of the app                             | So, I can access the and explore the content available                                  |Ensuring the user can scroll up and down to explore the recipes and the content available  |
-| #3 | As a regular app user | I can save/ favorite the recipes if needed                       |  So, I can save the new finds and recipes for the later time and                                 |  ensuring the user can hit the like or the star button to save the recipes and can access them later.                   |
 
 
 **Optional Nice-to-have Stories**
@@ -63,7 +62,6 @@ This app is a recipe app where people can log in and take advantage of the recip
 - [x] Created the Login page where the user can login or create an account by signing up providing the email and password.  
 - [x]     created the home feed page.
 - [x]     created the add new recipe page.
-- [x]     created the liked/saved recipe page.
 - [x]     created the categories page where the user can select from different categories.
 - [x]     implimneted the LogIn Logout function.
 - [x]     added the add recipe button and its Funtionality
@@ -91,8 +89,6 @@ This app is a recipe app where people can log in and take advantage of the recip
    * add recipes to db
    * view your recipes
    * delete your recipes
-* liked tab
-   * add ability to view liked recipes
 * Settings tab
    * TBD if necessary
    * would likely have the logout option and other possible options(delete account)
@@ -103,22 +99,17 @@ This app is a recipe app where people can log in and take advantage of the recip
 **Tab Navigation** (Tab to Screen)
 
 * [Home]
-* [Favorites]
 * [Recipes]
 
 **Flow Navigation** (Screen to Screen)
 
 * [Home screen]
-   * [From Home Screen to either Favorites or Recipes screen]
+   * [From Home Screen or Recipes screen]
    * Here users can look at announcements, newsfeeds and an overview of what the site has to offer.
    
-* [Favorites screen]
-   * [From Favorites to either Recipes screen or back to Home Screen]
-   * This is a screen where users where be able to look at their favorite recipes they added from the recipe screen.
-   
-* [Recipees screen]
-    * [From Recipes screen to either Home Screen or Favorites Screen]
-    * This is a screen where users can look at different recipes that are posted on the app, and have the ability to add their favorite recipes they like to revisit when they want to on the Favorites screen.
+* [Recipes screen]
+    * [From Recipes screen to either Home Screen or categories screen]
+    * This is a screen where users can look at different recipes that are posted on the app.
 
 ## Wireframes
 <img src="https://i.imgur.com/olUIvbU.jpg)" width=800><br>
@@ -131,22 +122,13 @@ objectId: String: This property represents the identities of every single user
 which uses the app to look at different recipes and get some inspiration, as well as post their own for others to see.
 
 author: Pointer to User: This property represents the user when they upload a photo
-or description of a recipe they want to share. This property can also be linked to all
-comments and captions they post as well.
+or description of a recipe they want to share.
 
 photo: File: This property represents the visual representation of the
 recipe the user wants to share with others.
 
 caption: String: This property is part of an optional description the user
 can add if they want with the photo of the recipe, they post for others to see.
-
-commentsCount: Number: This property will show the
-total number of comments that were made on a recipe that was
-posted in the app.
-
-likeCount: Number: This property will show the like
-count of each post/recipe, representing how many users
-like the recipe posted.
 
 created: DateTime: This property shows the date of
 when the recipe was posted by the user.
@@ -160,7 +142,6 @@ when the recipe was last edited.
    * Built-in PFUser login functionality.
 * Home Screen
    * (Read/GET) All Recipes
-   * (Read/GET) Each Recipes' likes through relation
    ``` Swift
    let recipeQuery = PFQuery(className:"recipes")
    let recipes = recipeQuery.find()
@@ -194,14 +175,7 @@ when the recipe was last edited.
    * (Read/GET) View your recipes.
    ``` Swift
    let recipeQuery = PFQuery(className:"recipes")
-   recipes = likesQuery.whereKey("author", equalTo: currentUser)
-   recipes.order(byDescending: "createdAt")
-   ```
-* liked tab 
-   * (read/GET) Recipes that the author liked.
-   ``` Swift
-   let recipeQuery = PFQuery(className:"recipes")
-   recipes = likesQuery.whereKey("likes.user", equalTo: currentUser)
+   recipes = recipeQuery.whereKey("author", equalTo: currentUser)
    recipes.order(byDescending: "createdAt")
    ```
 
